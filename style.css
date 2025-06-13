@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  /* font-family: inherit; */
+  border: none;
+  outline: none;
+  background: none;
+}
+fieldset {
+  border: none;
+}
+/* ---------------------------------- */
+
+.container {
+  background-color: pink;
+  width: 90vw;
+  max-width: 50rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.input-container {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .input {
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+}
+.container .input::placeholder {
+  letter-spacing: 0;
+}
+.container i {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.container i:hover {
+  opacity: 1;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: green;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.alert-container {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: 30rem;
+  height: 5rem;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.alert-container.active {
+  transform: scale(1);
+}
